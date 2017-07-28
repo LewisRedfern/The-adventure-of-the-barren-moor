@@ -1,0 +1,15 @@
+
+public abstract class GameObject {
+
+	protected String type;
+	protected int behaviour;
+	
+	public GameObject (String type) {
+		
+		this.type = type;
+	}
+	
+	public String getType() {
+		return this.type;
+	}
+}

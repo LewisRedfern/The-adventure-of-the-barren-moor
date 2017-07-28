@@ -1,0 +1,7 @@
+import java.util.HashMap;
+
+public class GameBoard {
+
+	Cell cell = new Cell();
+	HashMap<Integer, HashMap <Integer, cell>> board = new HashMap <Integer, HashMap <Integer, cell>>();
+}

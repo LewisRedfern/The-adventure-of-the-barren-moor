@@ -1,0 +1,14 @@
+
+public abstract class GameObject {
+
+	protected String type;
+	
+	public void GameObject (String type) {
+		
+		this.type = type;
+	}
+	
+	public String getType() {
+		return this.type;
+	}
+}

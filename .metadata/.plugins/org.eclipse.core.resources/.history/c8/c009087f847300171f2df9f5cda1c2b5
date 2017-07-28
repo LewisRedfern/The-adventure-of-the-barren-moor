@@ -1,0 +1,28 @@
+
+public class Enemy extends Cell{
+
+	public Enemy(String message, int function) {
+		super(message, function);
+	}
+	
+	public void setMessage() {
+
+		this.message = "Creature of the Swamp drained your health!\n\n-1 Health Point.";
+	}
+	
+	public String getMessage () {
+		
+		return this.message;
+	}
+	
+	public void setFunction () {
+		
+		this.function = 2;//gives health point
+	}
+	
+	public int getFunction () {
+		
+		return this.function;
+	}
+
+}

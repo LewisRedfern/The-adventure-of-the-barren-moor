@@ -1,0 +1,11 @@
+
+public class Cell {
+
+	private GameObject object = new Empty();
+
+	public Cell (GameObject o) {
+		
+		this.object = o;
+	}
+	
+}

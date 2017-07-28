@@ -1,0 +1,10 @@
+
+public class Treasure extends GameObject{
+
+	
+	public Treasure(String type, int behaviour) {
+		super(type);
+		// TODO Auto-generated constructor stub
+	}
+
+}
