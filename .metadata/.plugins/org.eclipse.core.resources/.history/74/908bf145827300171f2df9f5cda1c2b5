@@ -1,0 +1,9 @@
+
+public abstract class Cell {
+
+	protected String message;
+//	protected String cellType;
+	protected int function;
+	
+	public Cell (String message, int function) {}
+}

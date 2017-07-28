@@ -1,0 +1,27 @@
+
+public class Bonus extends Cell {
+
+	public Bonus(String message, int function) {
+		super(message, function);
+	}
+
+	public void setMessage() {
+
+		this.message = "The Suns light replensidhed your Health!\n\n+1 Health Point.";
+	}
+	
+	public String getMessage () {
+		
+		return this.message;
+	}
+	
+	public void setFunction () {
+		
+		this.function = 2;//gives health point
+	}
+	
+	public int getFunction () {
+		
+		return this.function;
+	}
+}

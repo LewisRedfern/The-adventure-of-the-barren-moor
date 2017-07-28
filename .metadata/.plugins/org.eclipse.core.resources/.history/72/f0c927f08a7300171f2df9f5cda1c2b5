@@ -1,0 +1,27 @@
+
+public class Empty extends Cell{
+
+	public Empty(String message, int function) {
+		super(message, function);
+	}
+
+	public void setMessage() {
+
+		this.message = "You moved."; // enter better message later
+	}
+	
+	public String getMessage () {
+		
+		return this.message;
+	}
+	
+	public void setFunction () {
+		
+		this.function = 0;//does nothing.
+	}
+	
+	public int getFunction () {
+		
+		return this.function;
+	}
+}

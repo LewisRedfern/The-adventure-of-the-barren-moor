@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class GameBoard {
+
+	Cell[][] board;
+	
+	public void createCells (int i) {
+		
+		for (int y = 0; y < i; y++) {
+			for (int x = 0; x < i; x++) {
+				
+				board[y][x] = new Cell(new Empty());
+			}
+		}
+	}
+}

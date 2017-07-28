@@ -1,0 +1,29 @@
+
+public class Treasure extends Cell {
+
+	public Treasure(String message, int function) {
+		super(message, function);
+	}
+
+	public void setMessage() {
+
+		this.message = "You see a portal shining with a bright blue light.\n\n"
+				+ "A familiar voice calls out to you.\n\n"
+				+ "The Voice says: 'Enter and return home.'";
+	}
+
+	public String getMessage() {
+
+		return this.message;
+	}
+
+	public void setFunction() {
+
+		this.function = 3;// ends game
+	}
+
+	public int getFunction() {
+
+		return this.function;
+	}
+}

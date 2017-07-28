@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class GameBoard {
+
+	Cell[][] board;
+	
+	public void createBoard (int i) {
+		
+		int charPosition = i / 2;
+		
+		for (int y = 0; y < i; y++) {//sets the y axis to the size of i
+			for (int x = 0; x < i; x++) {//same for x axis
+				
+				board[y][x] = new Cell(new Empty());//puts an instance of the empty cell object into each field of the array
+				
+			}
+		}
+		
+		//b[s/2][s/2] 
+		board[charPosition][charPosition] = new Cell(new Character());
+		
+	}
+}
