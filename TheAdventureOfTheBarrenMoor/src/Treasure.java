@@ -3,41 +3,24 @@ public class Treasure extends GameObject {
 
 	private String message;
 
-	public Treasure(String type, int behaviour, String message) {
-		super(type, behaviour);
-		this.message = message;
+	public Treasure() {
+		super("Treasure", 3);
+		this.message = "The portal is beaming with warm blue light.\n\n" + "A familar voice echos from the portal.\n\n"
+				+ "You approach the portal..." + "\n\nThe Voice: 'Enter and return home.'";
 	}
-	
-	public void setType () {
-		
-		this.type = Treasure.class.getName().toString();
-	}
-	
-	public String getType () {
-		
+
+	public String getType() {
+
 		return this.type;
 	}
-	
-	public void setBehaviour () {
-		
-		this.behaviour = 3;//ends game
-	}
-	
-	public int getBehaviour () {
-		
+
+	public int getBehaviour() {
+
 		return this.behaviour;
 	}
-	
-	public void setMessage () {
-		
-		this.message = "The portal is beaming with warm blue light.\n\n"
-				+ "A familar voice echos from the portal.\n\n"
-				+ "You approach the portal..."
-				+ "\n\nThe Voice: 'Enter and return home.'";
-	}
-	
-	public String getMessage () {
-		
+
+	public String getMessage() {
+
 		return this.message;
 	}
 }

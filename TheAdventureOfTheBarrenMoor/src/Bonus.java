@@ -1,16 +1,17 @@
-
+/*
+ * 
+ * 
+ * SETTER WILL BE ADDED LATER WHEN GAME IS EXPANDED
+ * 
+ * 
+ * */
 public class Bonus extends GameObject {
 
 	private String message;
 
-	public Bonus(String type, int behaviour, String message) {
-		super(type, behaviour);
-		this.message = message;
-	}
-	
-public void setType () {
-		
-		this.type = Treasure.class.getName().toString();
+	public Bonus() {
+		super("Bonus", 2);
+		this.message = "You found a big mac.\n\n+1 Health Point.";
 	}
 	
 	public String getType () {
@@ -18,19 +19,9 @@ public void setType () {
 		return this.type;
 	}
 	
-	public void setBehaviour () {
-		
-		this.behaviour = 2;//gives life
-	}
-	
 	public int getBehaviour () {
 		
 		return this.behaviour;
-	}
-	
-	public void setMessage () {
-		
-		this.message = "You found a big mac.\n\n+1 Health Point.";
 	}
 	
 	public String getMessage () {

@@ -3,32 +3,27 @@ public class Character extends GameObject{
 
 	private int healthPoints;
 	
-	public Character(String type, int behaviour, int healthPoints) {
-		super(type, behaviour);
-		this.healthPoints = healthPoints;
+	public Character() {
+		super("Character", 0);
+		this.type = Empty.class.getName().toString();
+		this.behaviour = 0;//does nothing
+		this.healthPoints = 3;
+
 	}
 	
 	public int getHealthPoints() {
 		return this.healthPoints;
 	}
 
-	public void setHealthPoints() {
-		this.healthPoints = 3;
+	public void setHealthPoints(int i) {
+		this.healthPoints = i;
 	}
 
 	public String getType() {
 		return this.type;
 	}
 
-	public void setType() {
-		this.type = Empty.class.getName().toString();
-	}
-
 	public int getBehaviour() {
 		return this.behaviour;
-	}
-
-	public void setBehaviour() {
-		this.behaviour = 0;//does nothing
 	}
 }

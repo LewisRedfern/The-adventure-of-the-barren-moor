@@ -1,0 +1,12 @@
+
+public class Cell {
+
+	private GameObject object = new Empty();
+	private GameObject oj2 = new Treasure();
+
+	public Cell (GameObject o) {
+		
+		this.object = o;
+	}
+	
+}
